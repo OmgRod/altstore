@@ -1,0 +1,98 @@
+---
+title: ClassFlow v0.1.0 Release!
+template: doc
+date: 2025-11-28T22:29:00Z
+---
+
+Thank you for trying ClassFlow. This is the initial 0.1.0 release build prepared for installation via AltStore. Below you'll find what's new, installation instructions for AltStore, migration notes, known issues, and troubleshooting tips.
+
+What's included in v0.1.0
+-------------------------
+- Stable 0.1.0 launch build with core ClassFlow features implemented.
+- Cross-platform UI built with Flutter (Dart), with native integrations where necessary.
+- Optimized performance and memory usage on iOS devices.
+- Initial support for background sync for classroom activity (subject to iOS background limits).
+- Base analytics and crash reporting (opt-in) for debugging and telemetry.
+- Accessibility improvements and basic VoiceOver support.
+
+Important notes for AltStore distributions
+------------------------------------------
+- This build is intended to be sideloaded using AltStore (AltServer + AltStore app).
+- AltStore requires a properly signed .ipa. For non-jailbroken devices, you must sign the .ipa with a valid Apple ID (free Apple IDs are supported by AltStore but require re-signing every 7 days).
+- If you prefer a simpler workflow for distribution to testers, consider providing a TestFlight build via App Store Connect (not part of this release).
+
+How to install via AltStore (end-user)
+--------------------------------------
+1. Download the ClassFlow .ipa for v0.1.0 (link provided by the repo owner / release assets).
+2. Install AltServer on your Mac or Windows machine and ensure it is running.
+3. Connect your iPhone/iPad to the same network as the AltServer machine (USB connection may be required for the first install on macOS).
+4. Open AltStore on your device or use AltServer > Install AltStore > [Your Device] to install AltStore if you don't already have it.
+5. On your device open AltStore, go to "My Apps" and tap the + button.
+6. Select the ClassFlow-v0.1.0.ipa file and follow the prompts. You will be asked to enter your Apple ID credentials for signing (this is uploaded to Apple and used to sign the app).
+7. After install completes, ClassFlow should appear on the home screen. Open it and accept any prompts (notifications, local network, etc.) as needed.
+
+How to build an installable .ipa (developer / maintainer)
+---------------------------------------------------------
+If you need to produce the .ipa for AltStore yourself (Flutter-based instructions):
+
+1. Ensure you have Xcode, Flutter, and the iOS toolchain installed.
+2. From the repo root:
+   ```
+   flutter clean
+   flutter pub get
+   flutter build ipa --export-options-plist=path/to/ExportOptions.plist
+   ```
+   - Alternatively, open the generated Xcode workspace and Archive using Xcode, then Export -> Development or Ad-Hoc to an .ipa.
+
+3. If distributing an .ipa to testers that will use AltStore, provide the signed .ipa or the unsigned .ipa and instruct testers to sign via AltStore. For CI automation, you can export a development-signed .ipa using macOS signing credentials.
+
+Migration & compatibility notes
+-------------------------------
+- This release targets iOS 13.0 and above (adjust in Xcode project settings if needed).
+- If you are upgrading from any earlier pre-release builds, the app will attempt to migrate local data automatically. Always advise testers to back up important data before upgrading.
+- For users with an existing ClassFlow install signed by a different Apple ID, uninstall the older build before installing v0.1.0 signed with a new account to avoid bundle-signing conflicts.
+
+Known issues
+------------
+- Background sync may be suspended by iOS if the app is not actively used; real-time background updates are limited by iOS policies.
+- If you see a "Untrusted Developer" alert, ensure the device trusts the Apple ID used to sign the app in Settings > General > Device Management (this is only relevant for enterprise-signed builds - AltStore handles trust for signed IPAs normally).
+- Push notifications are disabled in this build by default until push credentials are configured on the server side.
+- Some older devices may have reduced performance - please report device model and iOS version when filing issues.
+
+Troubleshooting
+---------------
+- "Install Failed" in AltStore: Ensure AltServer is running, your device is connected, and your Apple ID credentials are valid. Check AltServer logs for error details.
+- Crashes on launch: Collect crash logs via Xcode Organizer or device logs and open a bug report in this repository with logs, device model, and iOS version.
+- Re-signing every 7 days: If you used a free Apple ID, AltStore requires re-signing every 7 days. Use a paid Developer Program account for 1-year provisioning.
+
+Security & Privacy
+------------------
+- ClassFlow collects minimal telemetry (crash reports and optional analytics). Telemetry is strictly opt-in and can be disabled in Settings.
+- No classroom content is sent to third-parties except for explicitly configured server endpoints belonging to the repo owner/organization.
+- If you have specific privacy questions, please open an issue or contact the maintainers.
+
+Credits
+-------
+- Built with Flutter (Dart) and native platform code where necessary.
+- Thanks to contributors, testers, and the open-source community.
+
+Reporting bugs & contributing
+-----------------------------
+- To report bugs or request features, please open an issue in the ClassFlow GitHub repository with:
+  - Device model and iOS version
+  - Steps to reproduce
+  - Logs / screenshots if available
+- Contributions are welcome. See the CONTRIBUTING.md in the repo for guidelines.
+
+Changelog (high-level)
+----------------------
+- Initial public 0.1.0 release: core features, AltStore-ready .ipa, stability and performance improvements.
+
+Contact
+-------
+If you need help publishing or packaging the .ipa for AltStore, I can:
+- generate CI-ready build instructions,
+- produce a sample ExportOptions.plist,
+- or open a PR that adds an "altstore" release notes and packaging script to the repo.
+
+Thank you for using ClassFlow - enjoy the release!

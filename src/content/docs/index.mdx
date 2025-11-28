@@ -1,40 +1,30 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: OmgRod AltStore Source
+template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Welcome to my source! Here you'll find all of my apps.
   image:
-    file: ../../assets/houston.webp
+    file: https://github.com/OmgRod.png
   actions:
-    - text: Example Guide
-      link: /guides/example/
-      icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
+    - text: Browse News
+      link: /news
+    - text: View Source JSON
+      link: /OmgRod.json
       variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+## Featured & Updates
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+  <Card title="Latest News" icon="document" href="/news">
+    See recent release notes and announcements.
+  </Card>
+  <Card title="ClassFlow" icon="star" href="/news/news_rmh0eja07k/">
+    Read the latest on ClassFlow's AltStore release.
+  </Card>
+  <Card title="Source Manifest" icon="seti:html" href="/OmgRod.json">
+    Programmatic AltStore source metadata for this site.
+  </Card>
 </CardGrid>

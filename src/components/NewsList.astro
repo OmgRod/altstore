@@ -1,0 +1,36 @@
+---
+import { getCollection } from 'astro:content';
+
+const allNews = await getCollection('docs', (entry) => (entry.id ?? '').startsWith('news/'));
+const sorted = allNews
+  .map((e) => {
+    const data: any = e.data as any;
+    const href = `/${e.id}/`;
+    const time = data?.date ? Date.parse(data.date as string) : 0;
+    return { ...e, _href: href, _time: time, _data: data };
+  })
+  .sort((a, b) => (b._time - a._time) || b.id.localeCompare(a.id));
+---
+
+<ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem;">
+  {sorted.map((item) => (
+    <li style="padding: 1rem; border: 1px solid var(--sl-color-hairline); border-radius: 0.5rem; background: var(--sl-color-bg);"><!-- card -->
+      <a href={item._href} style="font-weight: 600; text-decoration: none; color: var(--sl-color-text-strong);">
+        {item.data.title}
+      </a>
+      {item._data?.date && (
+        <div style="color: var(--sl-color-text-accent); font-size: 0.9rem; margin-top: 0.25rem;">
+          {new Date(item._data.date as string).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}
+        </div>
+      )}
+      {item._data?.description && (
+        <p style="margin: 0.5rem 0 0; color: var(--sl-color-text);">
+          {item._data.description}
+        </p>
+      )}
+    </li>
+  ))}
+  {sorted.length === 0 && (
+    <li style="opacity: 0.8;">No news yet. Check back soon.</li>
+  )}
+</ul>

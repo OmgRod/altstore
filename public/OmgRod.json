@@ -7,17 +7,17 @@
   "patreonURL": "",
   "tintColor": "#6156e2",
   "featuredApps": [
-    "dev.omgrod.ClassFlow"
+    "dev.omgrod.classflow"
   ],
   "apps": [
     {
       "name": "ClassFlow",
-      "bundleIdentifier": "dev.omgrod.ClassFlow",
+      "bundleIdentifier": "dev.omgrod.classflow",
       "marketplaceID": "",
       "developerName": "OmgRod",
       "subtitle": "An awesome app.",
       "localizedDescription": "This is an awesome app only available on AltStore.",
-      "iconURL": "https://i.imgur.com/GHQMTci.png",
+      "iconURL": "https://altstore.omgrod.me/apps/dev.omgrod.classflow.png",
       "tintColor": "#6156e2",
       "category": "utilities",
       "screenshots": [],
@@ -31,15 +31,15 @@
   ],
   "news": [
     {
-      "title": "ClassFlow v1.0.0 Release!",
+      "title": "ClassFlow v0.1.0 Release!",
       "identifier": "news_rmh0eja07k",
       "caption": "Introducing a new update in ClassFlow!",
       "date": "2025-11-28T22:29",
       "tintColor": "#6156e2",
       "imageURL": "",
       "notify": true,
-      "url": "https://omgrod.me/altstore/news/news_rmh0eja07k.md",
-      "appID": "dev.omgrod.ClassFlow"
+      "url": "https://altstore.omgrod.me/news/news_rmh0eja07k",
+      "appID": "dev.omgrod.classflow"
     }
   ]
 }
