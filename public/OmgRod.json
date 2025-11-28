@@ -1,0 +1,45 @@
+{
+  "name": "OmgRod",
+  "subtitle": "A source for all of OmgRod's apps.",
+  "description": "Welcome to my source! Here you'll find all of my apps.",
+  "iconURL": "https://github.com/OmgRod.png",
+  "website": "https://omgrod.me",
+  "patreonURL": "",
+  "tintColor": "#6156e2",
+  "featuredApps": [
+    "dev.omgrod.ClassFlow"
+  ],
+  "apps": [
+    {
+      "name": "ClassFlow",
+      "bundleIdentifier": "dev.omgrod.ClassFlow",
+      "marketplaceID": "",
+      "developerName": "OmgRod",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This is an awesome app only available on AltStore.",
+      "iconURL": "https://i.imgur.com/GHQMTci.png",
+      "tintColor": "#6156e2",
+      "category": "utilities",
+      "screenshots": [],
+      "versions": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
+    }
+  ],
+  "news": [
+    {
+      "title": "ClassFlow v1.0.0 Release!",
+      "identifier": "news_rmh0eja07k",
+      "caption": "Introducing a new update in ClassFlow!",
+      "date": "2025-11-28T22:29",
+      "tintColor": "#6156e2",
+      "imageURL": "",
+      "notify": true,
+      "url": "https://omgrod.me/altstore/news/news_rmh0eja07k.md",
+      "appID": "dev.omgrod.ClassFlow"
+    }
+  ]
+}
