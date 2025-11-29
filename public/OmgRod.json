@@ -21,11 +21,11 @@
       "screenshots": [],
       "versions": [
         {
-          "downloadURL": "https://github.com/OmgRod/ClassFlow/releases/download/v0.1.0/classflow-v0.1.0-unsigned.ipa",
-          "size": 14100000,
           "version": "0.1.0",
           "date": "2025-11-29T00:46:00+00:00",
           "localizedDescription": "- Initial Release",
+          "downloadURL": "https://github.com/OmgRod/ClassFlow/releases/download/v0.1.0/classflow-v0.1.0-unsigned.ipa",
+          "size": 14100000,
           "minOSVersion": "12.0"
         }
       ],
@@ -38,6 +38,17 @@
     }
   ],
   "news": [
+    {
+      "title": "ClassFlow v0.1.0 Bugfix",
+      "identifier": "news_newd4dtyeg",
+      "caption": "Added improved file selection!",
+      "date": "2025-11-29T09:56",
+      "tintColor": "#6156e2",
+      "imageURL": "https://altstore.omgrod.me/apps/dev.omgrod.classflow/icon.png",
+      "notify": true,
+      "url": "https://altstore.omgrod.me/news/news_newd4dtyeg",
+      "appID": "dev.omgrod.classflow"
+    },
     {
       "title": "ClassFlow v0.1.0 Release!",
       "identifier": "news_rmh0eja07k",
