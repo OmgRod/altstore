@@ -15,7 +15,7 @@
       "marketplaceID": "",
       "developerName": "OmgRod",
       "subtitle": "Manage your classes, books and timetable with QR codes.",
-      "localizedDescription": "ClassFlow helps students and instructors stay organized and focused. Whether you’re managing multiple courses, tracking assignments and due dates, or coordinating live sessions and resources, ClassFlow brings everything into one simple, beautiful app.\n\nKey capabilities\n\n- Centralized class and course management: create and organize classes, sections, and topics.\n- Assignment & due date tracking: add tasks, set deadlines, and view what’s due next.\n- Schedule & calendar view: weekly and monthly views to visualize classes and commitments.\n- Attendance & participation logs: mark attendance, record notes, and review history (teacher view).\n- Notifications & reminders: get push notifications for upcoming deadlines and class events.\n- Resource sharing: attach notes, links, and files to classes and assignments.\n- Cross-platform performance: native-like experience on iOS and Android thanks to Flutter and platform code.",
+      "localizedDescription": "ClassFlow helps students and instructors stay organized and focused. Whether you're managing multiple courses, tracking assignments and due dates, or coordinating live sessions and resources, ClassFlow brings everything into one simple, beautiful app.\n\nKey capabilities\n\n- Centralized class and course management: create and organize classes, sections, and topics.\n- Assignment & due date tracking: add tasks, set deadlines, and view what's due next.\n- Schedule & calendar view: weekly and monthly views to visualize classes and commitments.\n- Attendance & participation logs: mark attendance, record notes, and review history (teacher view).\n- Notifications & reminders: get push notifications for upcoming deadlines and class events.\n- Resource sharing: attach notes, links, and files to classes and assignments.\n- Cross-platform performance: native-like experience on iOS and Android thanks to Flutter and platform code.",
       "iconURL": "https://altstore.omgrod.me/apps/dev.omgrod.classflow/icon.png",
       "tintColor": "#6156e2",
       "category": "utilities",
@@ -25,9 +25,10 @@
           "downloadURL": "https://github.com/OmgRod/ClassFlow/releases/download/v0.1.0/classflow-v0.1.0-unsigned.ipa",
           "size": 14100000,
           "version": "0.1.0",
-          "buildVersion": 1,
+          "buildVersion": "19",
           "date": "2025-11-29T00:46:00+00:00",
-          "localizedDescription": "- Initial Release"
+          "localizedDescription": "- Initial Release",
+          "minOSVersion": "12.0"
         }
       ],
       "appPermissions": {
