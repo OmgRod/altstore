@@ -25,10 +25,9 @@
           "downloadURL": "https://github.com/OmgRod/ClassFlow/releases/download/v0.1.0/classflow-v0.1.0-unsigned.ipa",
           "size": 14100000,
           "version": "0.1.0",
-          "buildVersion": null,
+          "buildVersion": 1,
           "date": "2025-11-29T00:46:00+00:00",
-          "localizedDescription": "- Initial Release",
-          "minOSVersion": null
+          "localizedDescription": "- Initial Release"
         }
       ],
       "appPermissions": {
