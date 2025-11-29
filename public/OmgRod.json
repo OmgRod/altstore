@@ -18,8 +18,21 @@
       "iconURL": "https://altstore.omgrod.me/apps/dev.omgrod.classflow/icon.png",
       "tintColor": "#6156e2",
       "category": "utilities",
-      "screenshots": [],
+      "screenshots": [
+        "https://raw.githubusercontent.com/OmgRod/altstore/refs/heads/master/public/apps/dev.omgrod.classflow/screenshots/iPhone/1.png",
+        "https://raw.githubusercontent.com/OmgRod/altstore/refs/heads/master/public/apps/dev.omgrod.classflow/screenshots/iPhone/2.png",
+        "https://raw.githubusercontent.com/OmgRod/altstore/refs/heads/master/public/apps/dev.omgrod.classflow/screenshots/iPhone/3.png",
+        "https://raw.githubusercontent.com/OmgRod/altstore/refs/heads/master/public/apps/dev.omgrod.classflow/screenshots/iPhone/4.png"
+      ],
       "versions": [
+        {
+          "downloadURL": "https://github.com/OmgRod/ClassFlow/releases/download/v0.1.1/classflow-v0.1.1-unsigned.ipa",
+          "size": 13400000,
+          "version": "0.1.1",
+          "date": "2025-11-29T10:35:00+00:00",
+          "localizedDescription": "- Add file selection on all devices",
+          "minOSVersion": "12.0"
+        },
         {
           "version": "0.1.0",
           "date": "2025-11-29T00:46:00+00:00",
