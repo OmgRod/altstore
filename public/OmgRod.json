@@ -4,7 +4,6 @@
   "description": "Welcome to my source! Here you'll find all of my apps.",
   "iconURL": "https://github.com/OmgRod.png",
   "website": "https://omgrod.me",
-  "patreonURL": "",
   "tintColor": "#6156e2",
   "featuredApps": [
     "dev.omgrod.classflow"
@@ -26,7 +25,7 @@
         "entitlements": [],
         "privacy": {}
       },
-      "patreon": ""
+      "patreon": {}
     }
   ],
   "news": [
