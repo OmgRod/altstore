@@ -33,8 +33,7 @@
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
-      },
-      "patreon": {}
+      }
     }
   ],
   "news": [
@@ -46,7 +45,7 @@
       "tintColor": "#6156e2",
       "imageURL": "https://altstore.omgrod.me/apps/dev.omgrod.classflow/icon.png",
       "notify": true,
-      "url": "https://altstore.omgrod.me/news/news_rmh0eja07k.md",
+      "url": "https://altstore.omgrod.me/news/news_rmh0eja07k",
       "appID": "dev.omgrod.classflow"
     }
   ]
