@@ -68,6 +68,17 @@
   ],
   "news": [
     {
+      "title": "ClassFlow v1.0.0 Release",
+      "identifier": "news_gf8p1u7m2c",
+      "caption": "A major release packed with improvements!",
+      "date": "2025-12-20T21:47",
+      "tintColor": "#6156e2",
+      "imageURL": "https://altstore.omgrod.me/apps/dev.omgrod.classflow/icon.png",
+      "notify": true,
+      "url": "https://altstore.omgrod.me/news/news_gf8p1u7m2c",
+      "appID": "dev.omgrod.classflow"
+    },
+    {
       "title": "ClassFlow v0.2.0 Release",
       "identifier": "news_sndu9odw9q",
       "caption": "Introducing a new update in ClassFlow!",
