@@ -6,9 +6,37 @@
   "website": "https://omgrod.me",
   "tintColor": "#6156e2",
   "featuredApps": [
+    "com.sparxsolver.mobileApp",
     "dev.omgrod.classflow"
   ],
   "apps": [
+    {
+      "name": "SparxSolver",
+      "bundleIdentifier": "com.sparxsolver.mobileApp",
+      "marketplaceID": "",
+      "developerName": "Sparx Liberation Front",
+      "subtitle": "A solver for Sparx Maths powered by Google Gemini that can also do your bookwork checks for you.",
+      "localizedDescription": "SparxSolver is a maths study companion that helps students understand and organise their bookwork.\n\nIt provides:\n\n- Step-by-step mathematical working\n- Clear KaTeX-rendered equations\n- Saved bookwork answers and timestamps\n- Notes for each bookwork entry\n- Graph-aware question analysis\n- Markdown and HTML export\n- Configurable AI settings and request limits\n- Desktop browser extension and mobile support\n- Use SparxSolver to review methods, check your working, and build a reusable record of your maths practice.\n\nSparxSolver is an independent educational tool and is not affiliated with or endorsed by Sparx Learning. Always follow your school’s rules and use the app to support learning rather than replace it.",
+      "iconURL": "https://github.com/Sparx-Liberation-Front.png",
+      "tintColor": "#6156e2",
+      "category": "utilities",
+      "screenshots": [],
+      "versions": [
+        {
+          "downloadURL": "https://github.com/Sparx-Liberation-Front/SparxSolver/releases/download/v1.1.0/sparxsolver-ios.ipa",
+          "size": 7700000,
+          "version": "1.1.0",
+          "buildVersion": "",
+          "date": "2026-09-21T17:26:00+01:00",
+          "localizedDescription": "- Added GitHub Actions workflow for Flutter Android and iOS builds.\n- Added full bookwork working-out storage and display.\n- Added expandable bookwork entries with editable notes.\n- Added Markdown and HTML bookwork export.\n- Added timestamped bookwork records and export filenames.\n- Added local KaTeX assets for offline mathematical rendering.\n- Added graph-aware Gemini screenshot handling with full-page screenshots and graph crops.\n- Added AI settings for:\n  - Gemini API keys\n  - Minimum and maximum thinking delay\n  - Request timeout\n  - Retry delay\n  - Maximum retry attempts\n- Added bulk interaction execution for multiple answer fills and clicks in one Gemini tool call.\n- Added server-side export handling and repository-local `Downloads` output directory.\n- Improved bookwork answer persistence to include working, notes, and timestamps.\n- Improved Gemini instructions for graph interpretation and coordinate verification.\n- Added request timeouts and bounded retries to prevent the agent hanging indefinitely.\n- Added batch interaction support for desktop and mobile/browser bridge automation.\n- Moved extension export handling away from browser-managed downloads.\n- Updated extension UI with AI settings and bookwork export controls.\n- Improved KaTeX rendering reliability inside the extension.\n- Fixed Flutter widget test dependency/import issues.\n- Fixed Flutter widget test assertions to target visible app title text.\n- Fixed Android build compatibility with legacy ProGuard defaults.\n- Hardened GitHub Actions token permissions.\n- Fixed extension icon/package output issues.\n- Removed reliance on remote KaTeX CDN assets.",
+          "minOSVersion": "12.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    },
     {
       "name": "ClassFlow",
       "bundleIdentifier": "dev.omgrod.classflow",
