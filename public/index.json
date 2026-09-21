@@ -14,7 +14,6 @@
     {
       "name": "SparxSolver",
       "bundleIdentifier": "com.sparxsolver.mobileApp",
-      "marketplaceID": "",
       "developerName": "Sparx Liberation Front",
       "subtitle": "A solver for Sparx Maths powered by Google Gemini that can also do your bookwork checks for you.",
       "localizedDescription": "SparxSolver is a maths study companion that helps students understand and organise their bookwork.\n\nIt provides:\n\n- Step-by-step mathematical working\n- Clear KaTeX-rendered equations\n- Saved bookwork answers and timestamps\n- Notes for each bookwork entry\n- Graph-aware question analysis\n- Markdown and HTML export\n- Configurable AI settings and request limits\n- Desktop browser extension and mobile support\n- Use SparxSolver to review methods, check your working, and build a reusable record of your maths practice.\n\nSparxSolver is an independent educational tool and is not affiliated with or endorsed by Sparx Learning. Always follow your school’s rules and use the app to support learning rather than replace it.",
